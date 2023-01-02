@@ -18,7 +18,6 @@ const renderCharacter= ({image,name,species,status,gender,origin})=>{
 const renderToHtml = (characters)=>{
     const renderCards = characters.map((character)=>renderCharacter(character));
     containerMain.innerHTML = renderCards.join("");
-    console.log(renderCards.join(""))
 }
 
 const callCharacters = async ()=>{
