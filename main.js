@@ -1,8 +1,9 @@
 const urlBase = "https://rickandmortyapi.com/api/character";
 const containerMain = document.querySelector("main");
 
+
 const renderCharacter= ({image,name,species,status,gender,origin})=>{
-    return ` <div class="card">
+    return `<div class="card">
     <img src="${image}" alt="imagen de personaje">
     <h1>${name}</h1>
     <div class="data">
@@ -16,14 +17,14 @@ const renderCharacter= ({image,name,species,status,gender,origin})=>{
 
 const renderToHtml = (characters)=>{
     const renderCards = characters.map((character)=>renderCharacter(character));
-    containerMain.innerHTML = renderCards;
+    containerMain.innerHTML = renderCards.join("");
+    console.log(renderCards.join(""))
 }
 
 const callCharacters = async ()=>{
     const response = await fetch(urlBase);
     const data = await response.json();
     renderToHtml(data.results);
-    console.log(data.results);
 }
 
 callCharacters();
