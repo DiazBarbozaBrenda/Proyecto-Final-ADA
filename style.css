@@ -1,0 +1,95 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/green-hexagon.jpg);
+    background-size: cover;  
+}
+
+header{
+    text-align: center;
+}
+
+header img{
+    width: 600px;
+}
+
+header p{
+    font-family: 'Coming Soon', cursive;
+    font-size: 30px;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px;
+}
+
+.card{
+    background-image: url(./assets/portal\ 1.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:  7px;
+    gap: 7px;
+    border-radius: 1rem;
+    width: 270px;
+    height: 430px;
+}
+
+.card img{
+    width: 150px;
+    border-radius: 1rem;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.card h1{
+    font-family: 'Coming Soon', cursive;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card h2{
+    font-family: 'Coming Soon', cursive;
+    font-weight: 400;
+}
+
+.card small{
+    font-family: 'Coming Soon', cursive;
+    font-weight: 400;
+}
+
+.card h2 small{
+    color: white;
+}
+
+.up{
+    text-decoration: none;
+    color: #6be640;
+    font-size: 30px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width:623px) {
+    header img{ 
+        width: 400px;
+    }
+}
