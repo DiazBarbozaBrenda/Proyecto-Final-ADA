@@ -5,8 +5,8 @@ box-sizing: border-box;
 }
 
 body{
-    background-image: url(./assets/green-hexagon.jpg);
-    background-size: cover;  
+    background-image: url(./assets/fondo\ 2.jpg);
+    background-size: cover; 
 }
 
 header{
@@ -20,6 +20,7 @@ header img{
 header p{
     font-family: 'Coming Soon', cursive;
     font-size: 30px;
+    font-weight: 400;
     color: white;
 }
 
@@ -56,13 +57,13 @@ main{
 
 .card h1{
     font-family: 'Coming Soon', cursive;
-    font-weight: 400;
+    font-weight: bolder;
     text-align: center;
 }
 
 .card h2{
     font-family: 'Coming Soon', cursive;
-    font-weight: 400;
+    font-weight: bolder;
 }
 
 .card small{
@@ -86,6 +87,7 @@ footer{
     padding: 5px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    font-size: 20px;
 }
 
 @media (max-width:623px) {
